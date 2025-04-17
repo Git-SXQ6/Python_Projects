@@ -1,0 +1,25 @@
+# Ask the user to input the duration of a song of their choice, in seconds.
+
+song_duration = input("Please enter the duration of a song in seconds: ")   
+
+class InvalidLength(Exception):
+    pass
+
+try:
+    song_duration = int(song_duration)
+    if song_duration < 0:
+        raise InvalidLength("Song duration cannot be negative.")
+    print(song_duration / 60, "minutes")
+except: 
+    print("Invalid input. Please enter a numeric value for the song duration.")
+
+
+# Use a try-except block to handle cases where the user enters non-numeric values.
+
+# If the input is invalid, show a descriptive error message.
+
+# Define a custom exception called InvalidLength for an invalid song length.
+
+# Raise your custom exception if the song length entered is a negative number.
+
+# If the user has entered a valid song length, calculate this length in minutes and display the result to the user.
