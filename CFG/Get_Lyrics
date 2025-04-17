@@ -1,0 +1,27 @@
+# Write a function called get_song that asks the user to input a song title, along with the artist's name, using two input prompts.
+def get_song():
+    title = input("Please enter the song title: ")
+    artist = input("Please enter the artist's name: ")
+    return title, artist
+# Write another function called get_lyrics that makes a HTTP GET request and prints the response to the end point:
+# https://api.lyrics.ovh/v1/{artist}/{title}
+
+import requests
+
+def get_lyrics(artist, title):
+    url = f"https://api.lyrics.ovh/v1/{artist}/{title}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        lyrics = data.get('lyrics', 'lyrics not found')
+        print(f"Lyrics for '{title}' by {artist}:\n{lyrics}")
+    else:
+        print(f"Error: Unable to fetch lyrics for '{title}' by {artist}. Status code: {response.status_code}")
+
+# Combine these functions into a main function that calls get_song, then calls get_lyrics, with the information that the user entered.
+
+def main():
+    title, artist = get_song()
+    get_lyrics(artist, title)
+
+main()
