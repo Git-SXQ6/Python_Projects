@@ -218,3 +218,68 @@ as a quick check to make sure input is as expected
 if assertion is true, program continues to execute. If false, program raises an AssertionError and stops
 
 make it quicker to find out what is wrong in the program
+
+
+## Recap
+
+- string: a sequence of characters enclosed in single or double quotation marks.
+        uppercase: my.string.upper()
+        lowercase: my_string.lower()
+
+- get information from user:
+        - getting input: input("Enter your name:")
+        - storing input: name = input("Enter your name:")
+        - converting input: int(input("Enter your age: ")
+- numerica data
+        integer, float
+
+  - arithmetic operators:
+    +  -  *  /  // %
+- Variables: reusable labels used to store data
+- String formatting: place a variable inside a message
+  name = "Charlotte"
+  f"Hello {name}, how are you?"
+- Lists: store an ordered collection of items:
+  students = ["Charlotte", "Adam", "Olivia"]
+  - Indexing: students[0]
+  - Slicing: students[1:2]
+  - Removing: students.pop()
+  - Adding: students.append("Tom")
+
+- Boolean: either True or False
+  - Comparison operators" compare 2 values and return a Boolean"
+    ==  !=  <  >  <=  >=
+  - Logical operators connect two or more conditions and return a Boolean: and or not
+
+- If ... else statements - perform different actions depending on the condition we set
+    if response == "Yes":
+            print("You selected yes")
+    if
+    elif
+    elif
+    else
+
+- For loop: repeat a block of code a set number of times:
+  for i in iterable:
+          print(i)
+- while loop: repeat a block of code until a condition is no longer met:
+  while i < 10:
+          print(i)
+          i += 1 # i = i + 1
+
+- function: reusable block of code that is used to perform a specific task
+          def my_function(arg1, arg2):
+                  return arg1 + arg2
+        - provide default argument to the function
+
+- Dictionaries: store data as a key-value pair, unordered collection of items
+  update: dictionary["name1"] = 10
+  access: dictionary["name1"]
+  extend: dictionary["new_name"] = 5
+  delete: del dictionary["name1"]
+
+  keys: dictionary.keys()
+  values: dictionary.values()
+
+
+
