@@ -273,13 +273,15 @@ make it quicker to find out what is wrong in the program
         - provide default argument to the function
 
 - Dictionaries: store data as a key-value pair, unordered collection of items
-  update: dictionary["name1"] = 10
-  access: dictionary["name1"]
-  extend: dictionary["new_name"] = 5
-  delete: del dictionary["name1"]
+  - update: dictionary["name1"] = 10
+  - access: dictionary["name1"]
+  - extend: dictionary["new_name"] = 5
+  - delete: del dictionary["name1"]
+  - for all keys or all values:
+          - keys: dictionary.keys()
+          - values: dictionary.values()
 
-  keys: dictionary.keys()
-  values: dictionary.values()
+  
 
 
 
