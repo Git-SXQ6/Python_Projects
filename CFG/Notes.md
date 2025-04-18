@@ -282,6 +282,42 @@ make it quicker to find out what is wrong in the program
           - values: dictionary.values()
 
   
+- JSON: data exchange format. can convert between JSON and dictionaries using json module:
+  - dictionary to JSON: json.dumps(my_dict)
+  - JSON to dictionary: json.load(my_json)
+ 
+- Pip is a Python package manager that allows us to install packages:
+ ** pip install package_name**
 
+APIs allow developers to request and exchange information
 
+HTTP methods define the type of operations that can be performed.
+- GET, POST, PUT, DELETE, PATCH
+- HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx
 
+  - requests module:
+    - get requests: response = requests.get(url)
+    - post requests: response = requests.post(url, data)
+    - delete requests: response = requests.delete(url,data)
+    - patch requests: response = requests.patch(url, data)
+    - put requests: response = requests.put(url, data)
+
+- exception handling is a way to manage errors that occur during runtime
+- assertion: a way of checking for conditions that should logically be true in your program
+  assert x > 10, "X must be larger than 10"
+
+- define own exceptions for specific errors
+  class ValueTooHigh(Exception)
+          pass
+
+- exception handing
+  try:
+          # code that can error
+  except:
+          # code that handles error
+  else:
+          # code that runs if there is no error
+  finally
+          # code that always run
+
+  throw for manually raise an exception
